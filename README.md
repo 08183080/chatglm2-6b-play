@@ -6,3 +6,4 @@ just finetune chatglm2-6b
   - [x] ptune官方doc: https://github.com/THUDM/ChatGLM2-6B/tree/main/ptuning
   - [x] 【客户: 如何全面更新参数呢】使用deepspeed工具 https://github.com/microsoft/DeepSpeed
   - [x] 不打无准备之仗, 之前没实际跑过, 晚上不禁略微面红耳赤笑死
+  - [x] 客户公司是A6000, 显卡有48G显存, 完全可以支持全参数训练 
