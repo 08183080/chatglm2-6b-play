@@ -1,0 +1,49 @@
+ bash train.sh
+NOTE: Redirects are currently not supported in Windows or MacOs.
+master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+Traceback (most recent call last):
+  File "D:\AIGC\chatglm2-6b\ptuning\main.py", line 33, in <module>
+    import transformers
+  File "C:\Users\gpu02\AppData\Roaming\Python\Python310\site-packages\transformers\__init__.py", line 26, in <module>
+    from . import dependency_versions_check
+  File "C:\Users\gpu02\AppData\Roaming\Python\Python310\site-packages\transformers\dependency_versions_check.py", line 57, in <module>
+    require_version_core(deps[pkg])
+  File "C:\Users\gpu02\AppData\Roaming\Python\Python310\site-packages\transformers\utils\versions.py", line 117, in require_version_core
+    return require_version(requirement, hint)
+  File "C:\Users\gpu02\AppData\Roaming\Python\Python310\site-packages\transformers\utils\versions.py", line 111, in require_version
+    _compare_versions(op, got_ver, want_ver, requirement, pkg, hint)
+  File "C:\Users\gpu02\AppData\Roaming\Python\Python310\site-packages\transformers\utils\versions.py", line 44, in _compare_versions
+    raise ImportError(
+ImportError: huggingface-hub>=0.15.1,<1.0 is required for a normal functioning of this module, but found huggingface-hub==0.10.1.
+Try: pip install transformers -U or pip install -e '.[dev]' if you're working with git main
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 21908) of binary: C:\ProgramData\anaconda3\python.exe
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Scripts\torchrun-script.py", line 33, in <module>
+    sys.exit(load_entry_point('torch==1.12.1', 'console_scripts', 'torchrun')())
+  File "C:\Users\gpu02\AppData\Roaming\Python\Python310\site-packages\torch\distributed\elastic\multiprocessing\errors\__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "C:\Users\gpu02\AppData\Roaming\Python\Python310\site-packages\torch\distributed\run.py", line 794, in main
+    run(args)
+  File "C:\Users\gpu02\AppData\Roaming\Python\Python310\site-packages\torch\distributed\run.py", line 785, in run
+    elastic_launch(
+  File "C:\Users\gpu02\AppData\Roaming\Python\Python310\site-packages\torch\distributed\launcher\api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "C:\Users\gpu02\AppData\Roaming\Python\Python310\site-packages\torch\distributed\launcher\api.py", line 250, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError:
+============================================================
+main.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-03-07_18:06:43
+  host      : DESKTOP-21I9IRL
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 21908)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+(base)
