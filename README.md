@@ -15,4 +15,5 @@ just finetune chatglm2-6b
   - [x] 客户公司的服务器电脑配置: win10 + 2张A800 GPU, 而且服务器不能联网亲亲, 内网服务器
   - [x] 首先电脑要有卡, 可以有n张卡, 基于显卡上的调用软件是cuda软件, nvcc --version可以查看nvidia版本
   - [x] 他昨天一开始的问题是shell脚本是路径要修改成转义版本的
-  - [x] nccl是NVIDIA Collective Communication Library (NCCL) Documentation, 多卡通信的, 多卡通信失败, 他修改设置单卡改了下代码成功   
+  - [x] nccl是NVIDIA Collective Communication Library (NCCL) Documentation, 多卡通信的, 多卡通信失败, 他修改设置单卡改了下代码成功
+  - [x] nccl是不能在windows上作为backend运行的
