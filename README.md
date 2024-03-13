@@ -17,3 +17,4 @@ just finetune chatglm2-6b
   - [x] 他昨天一开始的问题是shell脚本是路径要修改成转义版本的
   - [x] nccl是NVIDIA Collective Communication Library (NCCL) Documentation, 多卡通信的, 多卡通信失败, 他修改设置单卡改了下代码成功
   - [x] nccl是不能在windows上作为backend运行的
+- [x] 3/13,  他把模型部署代码似乎跑通了, 明天帮他看看lanchain
